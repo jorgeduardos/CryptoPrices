@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-class SingleCrypto extends Component {
+class Conversor extends Component {
 	render(){
 		return(
 			<div>
-				Single Crypto
-				<Link to='/'><div>Back</div></Link>
+				Conversor
+				<Link to='/'>Back</Link>
 			</div>
 		);
 	}
 }
 
-export default SingleCrypto;
+export default Conversor;

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import _ from 'lodash';
 
-import SearchBar from './components/search_bar.js';
-import CryptoRow from './components/crypto_row.js';
+import SearchBar from './search_bar.js';
+import CryptoRow from './crypto_row.js';
 
 
 let limitGlobal = 500;
@@ -12,7 +12,7 @@ let limitString = `?limit=${limitGlobal}`;
 let url = `https://api.coinmarketcap.com/v1/ticker/${limitString}`;
 
 
-class App extends Component {
+class Home extends Component {
 	
 	constructor(props){
 
@@ -54,4 +54,4 @@ class App extends Component {
 	}
 }
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+export default Home;

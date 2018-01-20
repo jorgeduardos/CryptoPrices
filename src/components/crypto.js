@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const CryptoItem = (props) => {
@@ -15,7 +16,7 @@ const CryptoItem = (props) => {
 
 	return(
 		<div className='cryptoItem'>
-			<img className='cryptoImg' src={imgPath} />
+			<Link to='/single-crypto'><img className='cryptoImg' src={imgPath} /></Link>
 			<div>{props.crypto.name}</div>
 			<div>${props.crypto.price_usd}</div>	
 		</div>

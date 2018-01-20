@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class SearchBar extends Component {
@@ -13,7 +14,7 @@ export default class SearchBar extends Component {
 		return(
 			<div className='titleDiv'>
 				<h1>Coin Watch</h1>
-				<button className='conversor'>Conversor</button>
+				<Link to='/conversor'><button className='conversor'>Conversor</button></Link>
 				<input 
 				value={this.state.term}
 				onChange={(event) => this.setState({term: event.target.value})} placeholder='Search Crypto' type="text"/>
