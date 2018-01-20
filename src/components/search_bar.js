@@ -13,9 +13,10 @@ export default class SearchBar extends Component {
 		return(
 			<div className='titleDiv'>
 				<h1>Coin Watch</h1>
+				<button className='conversor'>Conversor</button>
 				<input 
 				value={this.state.term}
-				onChange={(event) => this.setState({term: event.target.value})} placeholder='Serach Crypto' type="text"/>
+				onChange={(event) => this.setState({term: event.target.value})} placeholder='Search Crypto' type="text"/>
 			</div>
 		);
 	}

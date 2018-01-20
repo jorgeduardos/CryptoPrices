@@ -1,3 +1,7 @@
+.app{
+	text-align: center;
+}
+
 .titleDiv{
 	margin-top: 25px;
 	text-align: center;
@@ -5,9 +9,34 @@
 		margin-top: 25px;
 		width: 80%;
 	}
+	.conversor{
+		float: right;
+		margin-right: -80px;
+	}
 }
 
 .cryptoContainer{
 	margin-top: 50px;
 	text-align: center;
+	.cryptoInner{
+		width: 100%;
+	}
+}
+
+.cryptoItem{
+	margin-top: 15px;
+	margin-right: 0;
+	width: 33.33%;
+	height: 150px;
+	float: left;
+	.cryptoImg{
+		width: auto;
+		height: 30%;
+		margin-bottom: 15px;
+	}
+}
+
+.loadMore{
+	margin: 0 5px 15px 5px;
+
 }
