@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Simple web app to check crypto currency prices",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "",
+  "author": "Jorge E Sosa",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
@@ -28,12 +28,11 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.1.18",
+    "file-exists": "^5.0.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-redux": "4.3.0",
     "react-router": "^2.0.1",
-    "react-router-dom": "^4.2.2",
-    "redux": "^3.0.4"
+    "react-router-dom": "^4.2.2"
   }
 }

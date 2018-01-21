@@ -2,17 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const CryptoItem = (props) => {
-	
-	let imgPath = `../../style/imgs/${props.crypto.id}.svg`;
 
-	// changeDisplay(props){
-	// 	if(props.crypto.percent_change_24h > 0){
-	// 		return 'changeGreen';
-	// 	}else{
-	// 		return 'changeRed';
-	// 	}
-	// }
+
+const CryptoItem = (props) => {
+
+	let imgPath = `../../style/imgs/${CryptoImgPath(props.crypto)}.svg`;
 
 	return(
 		<div className='cryptoItem'>
@@ -21,6 +15,10 @@ const CryptoItem = (props) => {
 			<div>${props.crypto.price_usd}</div>	
 		</div>
 	);
+}
+
+function CryptoImgPath(cryptoRank){
+	return(cryptoRank.rank < 14 ? cryptoRank.id : '../../style/imgs/coins');
 }
 
 export default CryptoItem;

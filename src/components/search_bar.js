@@ -16,6 +16,7 @@ export default class SearchBar extends Component {
 				<h1>Coin Watch</h1>
 				<Link to='/conversor'><button className='conversor'>Conversor</button></Link>
 				<input 
+				className='title-form form-control'
 				value={this.state.term}
 				onChange={(event) => this.setState({term: event.target.value})} placeholder='Search Crypto' type="text"/>
 			</div>

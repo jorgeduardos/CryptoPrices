@@ -4,8 +4,10 @@
 .titleDiv {
   margin-top: 25px;
   text-align: center; }
-  .titleDiv input {
+  .titleDiv .title-form {
+    display: inline;
     margin-top: 25px;
+    margin-right: 0;
     width: 80%; }
   .titleDiv .conversor {
     float: right;
