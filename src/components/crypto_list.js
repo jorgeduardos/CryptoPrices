@@ -2,7 +2,7 @@ import React from 'react';
 
 import CryptoItem from './crypto.js';
 
-const CryptoRow = (props) => {
+const CryptoList = (props) => {
 
 	const CryptoItems = props.cryptos.slice(0, props.limit).map((crypto) => {
 		return(
@@ -17,4 +17,4 @@ const CryptoRow = (props) => {
 	);
 }
 
-export default CryptoRow;
+export default CryptoList;
