@@ -9,9 +9,9 @@ const Main = () => {
 	return(
 		<div>
 			<Switch>
-				<Route exact path='/' component={Home}/>
 				<Route path='/conversor' component={Conversor} />
-				<Route path='/single-crypto' component={SingleCrypto} />
+				<Route path='/single-crypto/:id' component={SingleCrypto} />
+				<Route exact path='/' component={Home}/>
 			</Switch>
 		</div>
 	);

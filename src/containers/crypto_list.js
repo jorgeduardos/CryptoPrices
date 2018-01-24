@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import { fetchCryptos } from '../actions';
+import { fetchCryptos, deleteSingleCrypto } from '../actions';
 import _ from 'lodash';
 
 import CryptoItem from '../components/crypto.js';
@@ -18,6 +18,7 @@ class CryptoList extends Component{
 	CryptoItems(){
 		return _.map(this.props.cryptos, crypto => {
 			if(crypto.rank <= this.state.limit){
+				// console.log(crypto);
 				return(
 					<CryptoItem key={crypto.id} crypto={crypto} />
 				);
@@ -27,6 +28,7 @@ class CryptoList extends Component{
 
 	componentDidMount(){
 		this.props.fetchCryptos();
+		this.props.deleteSingleCrypto();
 	}
 
 	onShowMoreHandler(){
@@ -56,4 +58,4 @@ function mapStateToProps(state){
 }
 
 
-export default connect(mapStateToProps, { fetchCryptos })(CryptoList);
+export default connect(mapStateToProps, { fetchCryptos, deleteSingleCrypto })(CryptoList);

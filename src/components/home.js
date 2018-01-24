@@ -6,10 +6,10 @@ import CryptoList from '../containers/crypto_list.js';
 
 
 
-const Home = () =>{
+const Home = (props) =>{
 	return(
 		<div className='app'>
-			<SearchBar />
+			<SearchBar title={'Coin Watch'} history={props.history} />
 			<div className='container cryptoContainer'>
 				<CryptoList/>
 			</div>
