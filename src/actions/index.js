@@ -5,11 +5,13 @@ export const FETCH_SINGLE_CRYPTO = 'fetch_single_crypto';
 export const DELETE_CRYPTO = 'delete_crypto';
 export const FETCH_SINGLE_CRYPTO_ERROR = 'fetch_single_crypto_error';
 
-const limitGlobal = 500;
-const limitString = `?limit=${limitGlobal}`;
 const url = 'https://api.coinmarketcap.com/v1/ticker';
 
-export function fetchCryptos(){
+export function fetchCryptos(limit){
+	
+	let limitGlobal = limit;
+	const limitString = `?limit=${limitGlobal}`;
+
 	const request = axios.get(`${url}/${limitString}`).catch(function(error){
 		console.log(error);
 	});

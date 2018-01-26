@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
-import { fetchSingleCrypto } from  '../actions';
-import SearchBar from './search_bar.js';
+import { fetchSingleCrypto, fetchCryptos } from  '../actions';
+import SearchBar from '../components/search_bar.js';
 import numeral from 'numeral';
+
+import Conversor from '../components/conversor.js';
 
 const imgPath = '../../style/imgs/cryptocurrency-icons/svg/color';
 
@@ -13,6 +15,7 @@ class SingleCrypto extends Component {
 	componentDidMount(){
 		const {id} = this.props.match.params;
 		this.props.fetchSingleCrypto(id);
+		this.props.fetchCryptos(100);
 	}
 
 	onClickHanlder(){
@@ -24,7 +27,6 @@ class SingleCrypto extends Component {
 		const crypto = this.props.singleCrypto;
 		return(
 			<div className="container top-container">
-				{console.log(crypto)}
 				<SearchBar title={crypto.name} history={this.props.history} />
 				<div className='singleCryptoContainer'>
 					<div className='col-sm-4'>
@@ -67,7 +69,7 @@ class SingleCrypto extends Component {
 						</div>
 					</div>		
 				</div>
-				<Link className='btn btn-primary cancel-btn' to='/'>Back</Link>
+				<Conversor cryptos={this.props.cryptos} crypto={this.props.singleCrypto}/>
 			</div>
 			// ADD BACK BUTTON
 		);
@@ -76,6 +78,7 @@ class SingleCrypto extends Component {
 
 function mapStateToProps(state){
 	return {
+		cryptos: state.cryptos,
 		singleCrypto: state.singleCrypto
 	};
 }
@@ -86,4 +89,4 @@ function change(num){
 }
 
 
-export default connect(mapStateToProps, {fetchSingleCrypto})(SingleCrypto);
+export default connect(mapStateToProps, {fetchSingleCrypto, fetchCryptos})(SingleCrypto);

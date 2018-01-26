@@ -27,7 +27,7 @@ class CryptoList extends Component{
 	}
 
 	componentDidMount(){
-		this.props.fetchCryptos();
+		this.props.fetchCryptos(500);
 		this.props.deleteSingleCrypto();
 	}
 

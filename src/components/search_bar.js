@@ -22,7 +22,6 @@ class SearchBar extends Component {
 		return(
 			<div className='titleDiv'>
 				<h1>{this.props.title}</h1>
-				<Link to='/conversor'><button className='conversor'>Conversor</button></Link>
 				<input 
 					className='title-form form-control'
 					value={this.state.term}
