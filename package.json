@@ -37,6 +37,7 @@
     "react-router": "^2.0.1",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "redux-promise": "^0.5.3"
+    "redux-promise": "^0.5.3",
+    "sort-by": "^1.2.0"
   }
 }
