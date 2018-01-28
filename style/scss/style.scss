@@ -1,5 +1,5 @@
 #main-container{
-	height: 100vh;
+	// height: 100vh;
 }
 
 .app{
@@ -71,7 +71,7 @@
 }
 
 .top-container{
-	overflow: hidden;
+	// overflow: hidden;
 	.cancel-btn{
 		position: absolute;
 		bottom: 4%;
@@ -211,7 +211,7 @@
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	overflow-y: scroll;
-	height: 140px;
+	height: 250px;
     display: none;
     position: absolute;
     background-color: #f6f6f6;

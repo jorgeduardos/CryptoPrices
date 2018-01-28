@@ -31,14 +31,16 @@ class Conversor extends Component {
 		// console.log(event.target.textContent);
 		if(event.target.className == 'a1'){
 			this.props.cryptos.map(crypto => {
+				let result = this.conversorFunc(this.state.amount, crypto, this.state.cryptoToConvert);
 				if(crypto.name == event.target.textContent){
-					this.setState({selectedCrypto: crypto, dropClass1: ''});
+					this.setState({selectedCrypto: crypto, dropClass1: '', result});
 				}
 			});
 		}else{
 			this.props.cryptos.map(crypto => {
+				let result = this.conversorFunc(this.state.amount, this.state.selectedCrypto, crypto);
 				if(crypto.name == event.target.textContent){
-					this.setState({cryptoToConvert: crypto, dropClass2: ''});
+					this.setState({cryptoToConvert: crypto, dropClass2: '', result});
 				}
 			});
 		}
@@ -71,7 +73,7 @@ class Conversor extends Component {
 		if(ouputCrypto.name == 'USD'){
 			result = numeral(inputCrypto.price_usd*parseInt(amount)).format('0,0.00');
 		}else{
-			result = numeral((inputCrypto.price_usd/ouputCrypto.price_usd)*parseInt(event.target.value)).format('0,0.00');
+			result = numeral((inputCrypto.price_usd/ouputCrypto.price_usd)*parseInt(amount)).format('0,0.00');
 		}
 		return result;
 	}
