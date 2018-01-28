@@ -8,8 +8,6 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Jorge E Sosa",
@@ -25,7 +23,7 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
