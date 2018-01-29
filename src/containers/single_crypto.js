@@ -7,7 +7,7 @@ import numeral from 'numeral';
 
 import Conversor from '../components/conversor.js';
 
-const imgPath = '../../style/imgs/cryptocurrency-icons/svg/color';
+const imgPath = '../../style/imgs/icons/svg/color';
 
 class SingleCrypto extends Component {
 
