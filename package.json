@@ -1,14 +1,16 @@
 {
-  "name": "crypto-prices",
+  "name": "Crypto Watch",
   "version": "1.0.0",
   "description": "Simple web app to check crypto currency prices",
   "main": "index.js",
   "homepage": "https://jorgeduardos.github.io/CryptoPrices",
   "repository": "",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Jorge E Sosa",
   "license": "ISC",
@@ -28,6 +30,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.16.2",
     "file-exists": "^5.0.1",
     "gh-pages": "^1.1.0",
     "lodash": "^3.10.1",
