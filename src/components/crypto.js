@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const CryptoItem = (props) => {
 
-	let imgPath = `../../style/imgs/icons/svg/color/${CryptoImgPath(props.crypto)}.svg`;
+	let imgPath = `../../style/imgs/cryptocurrency-icons/svg/color/${CryptoImgPath(props.crypto)}.svg`;
 
 	return(
 		<div className='cryptoItem'>
