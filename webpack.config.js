@@ -16,6 +16,14 @@ module.exports = {
       }
     }]
   },
+   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"development"',
+      DEVELOPMENT: true,
+      DEBUG: true,
+    }),
+  ],
+
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
