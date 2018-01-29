@@ -42,6 +42,17 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.0"
   }
 }
