@@ -1,5 +1,5 @@
 {
-  "name": "Crypto Watch",
+  "name": "crypto-prices",
   "version": "1.0.0",
   "description": "Simple web app to check crypto currency prices",
   "main": "index.js",
