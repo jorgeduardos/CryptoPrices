@@ -1,0 +1,3 @@
+[submodule "style/imgs/icons"]
+	path = style/imgs/icons
+	url = https://github.com/cjdowner/cryptocurrency-icons.git
