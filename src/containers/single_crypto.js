@@ -31,7 +31,7 @@ class SingleCrypto extends Component {
 				<div className='singleCryptoContainer'>
 					<div className='col-sm-4'>
 						<img 
-							src={`${imgPath}/${crypto.symbol}.svg`} 
+							src={`${require(imgPath)}/${crypto.symbol}.svg`} 
 							alt={`${crypto.name} logo image`}
 						/>
 						<div className='rank-div'>

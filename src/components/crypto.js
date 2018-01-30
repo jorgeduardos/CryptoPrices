@@ -10,7 +10,7 @@ const CryptoItem = (props) => {
 
 	return(
 		<div className='cryptoItem'>
-			<Link to={`/single-crypto/${props.crypto.id}`}><img className='cryptoImg' src={imgPath} /></Link>
+			<Link to={`/single-crypto/${props.crypto.id}`}><img className='cryptoImg' src={require(imgPath)} /></Link>
 			<div>
 				<span>{props.crypto.rank}.</span><h6>{props.crypto.name}</h6>
 			</div>
