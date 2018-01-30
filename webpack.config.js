@@ -16,12 +16,8 @@ module.exports = {
       }
     },
     {
-    test: /\.(pdf|jpg|png|gif|svg|ico)$/,
-    use: [
-        {
-            loader: 'url-loader'
-        },
-    ]
+      test: /\.(jpg|png|gif|svg)$/,
+      loader: 'url?limit=25000'
     }]
   },
   resolve: {
