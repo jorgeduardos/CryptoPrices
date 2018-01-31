@@ -7,7 +7,6 @@ const CryptoItem = (props) => {
 
 	return(
 		<div className='cryptoItem'>
-			{console.log(images)}
 			<Link to={`/single-crypto/${props.crypto.id}`}><img className='cryptoImg' src={require(`../../style/imgs/cryptocurrency-icons/svg/color/${props.crypto.symbol}.svg`)} /></Link>
 			<div>
 				<span>{props.crypto.rank}.</span><h6>{props.crypto.name}</h6>
