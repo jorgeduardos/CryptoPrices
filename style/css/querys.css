@@ -1,0 +1,100 @@
+@media only screen and (max-width: 1001px) {
+    
+    .top-container .singleCryptoContainer .col-xs-4 img{
+        height: 150px;
+    }
+
+    .top-container .singleCryptoContainer .col-xs-4 .rank-div{
+        height: 40px;
+        width: 40px;
+    }
+
+    .top-container .singleCryptoContainer .col-xs-4 .rank-div div{
+        height: 17px;
+        width: 17px;
+    }
+
+    .top-container .singleCryptoContainer .col-xs-4 .rank-div div h3{
+        font-size: 15px;
+    }
+
+    .top-container .conversor-container{
+        margin-top: 0;
+    }
+    
+
+    .top-container .conversor-container .input-container .amount{
+        width: 150px;
+    }
+    .conversor-container .dropbtn{
+        width: 150px;
+    }
+    .conversor-container .dropdown-content{
+        min-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    
+    .top-container .singleCryptoContainer .col-xs-4 img{
+        height: 130px;
+    }
+
+    .top-container{
+        font-size: 14px;
+    }
+
+    .top-container .conversor-container .input-container .result-div span{
+        margin: 5px;
+    }
+
+    .top-container .conversor-container .input-container span{
+        margin: 5px;
+    }
+
+    .top-container .conversor-container .input-container .amount{
+        width:120px;
+    }
+
+    .conversor-container .dropbtn{
+        width: 110px;
+    }
+
+    .dropbtn{
+        font-size: 1em;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    
+    .top-container .singleCryptoContainer .col-xs-4 img{
+        height: 100px;
+    }
+
+    .top-container{
+        font-size: 12px;
+    }
+
+    .top-container .conversor-container .input-container .result-div span{
+        margin: 10px;
+    }
+
+    .top-container .conversor-container .input-container span{
+        margin: 5px;
+    }
+
+    .top-container .conversor-container .input-container .amount{
+        width:100px;
+    }
+
+    .conversor-container .dropbtn{
+        width: 90px;
+    }
+
+    .dropbtn{
+        font-size: 0.9em;
+    }
+}
+
