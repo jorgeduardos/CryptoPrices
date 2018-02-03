@@ -35,6 +35,15 @@
 }
 
 @media only screen and (max-width: 770px) {
+
+    .cancel-btn{
+        bottom: 8%;
+    }
+
+    .top-container .singleCryptoContainer{
+        height: 270px;
+        margin-top: 30px;
+    }
     
     .top-container .singleCryptoContainer .col-xs-4 img{
         height: 130px;
