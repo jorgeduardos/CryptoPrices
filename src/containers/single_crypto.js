@@ -72,7 +72,7 @@ class SingleCrypto extends Component {
 					</div>		
 				</div>
 				<Conversor cryptos={this.props.cryptos} crypto={this.props.singleCrypto}/>
-				<Link className='cancel-btn btn btn-danger' to=''>Back</Link>
+				<div className='cancel-btn-div'><Link className='cancel-btn btn btn-danger' to=''>Back</Link></div>
 			</div>
 			// ADD BACK BUTTON
 		);

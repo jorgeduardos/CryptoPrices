@@ -1,5 +1,5 @@
 #main-container{
-	height: 100vh;
+	// height: 100vh;
 }
 
 .app{
@@ -73,10 +73,10 @@
 .top-container{
 	font-size: 16px;
 	// overflow: hidden;
-	.cancel-btn{
-		position: absolute;
-		bottom: 2%;
-		right: 47%;
+	.cancel-btn-div{
+		margin-top: 25px;
+		width: 100%;
+		text-align: center;
 	}
 	.singleCryptoContainer{
 		height: 300px;

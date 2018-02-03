@@ -36,11 +36,6 @@
 
 @media only screen and (max-width: 770px) {
 
-    .cancel-btn{
-        bottom: 8%;
-        right: 43%;
-    }
-
     .top-container .singleCryptoContainer{
         height: 270px;
         margin-top: 30px;
@@ -78,11 +73,6 @@
 
 
 @media only screen and (max-width: 500px) {
-
-    .cancel-btn{
-        bottom: 8%;
-        right: 40%;
-    }
     
     .top-container .singleCryptoContainer .col-xs-4 img{
         height: 100px;
