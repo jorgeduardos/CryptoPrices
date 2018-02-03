@@ -1,5 +1,5 @@
 #main-container{
-	// height: 100vh;
+	height: 100vh;
 }
 
 .app{
@@ -54,7 +54,7 @@
 	}
 	.cryptoImg{
 		width: auto;
-		height: 30%;
+		height: 35%;
 		margin-bottom: 15px;
 	}
 }
@@ -71,17 +71,18 @@
 }
 
 .top-container{
+	font-size: 16px;
 	// overflow: hidden;
 	.cancel-btn{
 		position: absolute;
-		bottom: 4%;
+		bottom: 2%;
 		right: 47%;
 	}
 	.singleCryptoContainer{
 		height: 300px;
 		margin-top: 60px;
 		text-align: center;
-		.col-sm-4{
+		.col-xs-4{
 			.rank-div{
 				position: relative;
 				margin: auto;
@@ -112,13 +113,13 @@
 				width: auto;
 			}	
 		}
-		.col-sm-8{
+		.col-xs-8{
 			.singleCryptInfoContainer{
 				.price-row{
-					font-size: 26px;
+					font-size: 1.625em;
 				}
 				.percent-row{
-					font-size: 22px;
+					font-size: 1.375em;
 				}
 				.row{
 					text-align: left;
@@ -135,6 +136,9 @@
 	}
 	
 	.conversor-container{
+		h4{
+			font-size: 1.65em;
+		}
 		margin-top: 20px;
 		text-align: center;
 		.input-container{

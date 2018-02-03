@@ -31,7 +31,7 @@ class SingleCrypto extends Component {
 			<div className="container top-container">
 				<SearchBar title={crypto.name} history={this.props.history} />
 				<div className='singleCryptoContainer'>
-					<div className='col-sm-4'>
+					<div className='col-xs-4'>
 						<img 
 							src={`${imgPath}/${crypto.symbol ? crypto.symbol.toLowerCase() : crypto.symbol}.svg`} 
 							alt={`${crypto.name} logo image`}
@@ -42,31 +42,31 @@ class SingleCrypto extends Component {
 							</div>
 						</div>
 					</div>
-					<div className='col-sm-8'>
+					<div className='col-xs-8'>
 						<div className='container singleCryptInfoContainer'>
 							<div className='row price-row'>
-								<div className='col-sm-6 tag'>Price</div>
-								<div className='col-sm-6 price-value'>${numeral(crypto.price_usd).format('0,0.0000')}</div>
+								<div className='col-xs-6 tag'>Price</div>
+								<div className='col-xs-6 price-value'>${numeral(crypto.price_usd).format('0,0.0000')}</div>
 							</div>
 							<div className='row'>
-								<div className='col-sm-6 tag'>Market Cap</div>
-								<div className='col-sm-6'>${numeral(crypto.market_cap_usd).format('0,0.0')}</div>
+								<div className='col-xs-6 tag'>Market Cap</div>
+								<div className='col-xs-6'>${numeral(crypto.market_cap_usd).format('0,0.0')}</div>
 							</div>
 							<div className='row'>
-								<div className='col-sm-6 tag'>Available Supply</div>
-								<div className='col-sm-6'>{numeral(crypto.available_supply).format('0,0.0')} {crypto.symbol}</div>
+								<div className='col-xs-6 tag'>Available Supply</div>
+								<div className='col-xs-6'>{numeral(crypto.available_supply).format('0,0.0')} {crypto.symbol}</div>
 							</div>
 							<div className='row'>
-								<div className='col-sm-6 tag'>Maximum Supply</div>
-								<div className='col-sm-6'>{numeral(crypto.max_supply).format('0,0.0')} {crypto.symbol}</div>
+								<div className='col-xs-6 tag'>Maximum Supply</div>
+								<div className='col-xs-6'>{numeral(crypto.max_supply).format('0,0.0')} {crypto.symbol}</div>
 							</div>
 							<div className='row'>
-								<div className='col-sm-6 tag'>Total Supply</div>
-								<div className='col-sm-6'>{numeral(crypto.total_supply).format('0,0.0')} {crypto.symbol}</div>
+								<div className='col-xs-6 tag'>Total Supply</div>
+								<div className='col-xs-6'>{numeral(crypto.total_supply).format('0,0.0')} {crypto.symbol}</div>
 							</div>
 							<div className='row percent-row'>
-								<div className='col-sm-6 tag'>Change(24h)</div>
-								<div className={`col-sm-6 ${change(crypto.percent_change_24h)}`} >{numeral(crypto.percent_change_24h).format('0.0')}%</div>
+								<div className='col-xs-6 tag'>Change(24h)</div>
+								<div className={`col-xs-6 ${change(crypto.percent_change_24h)}`} >{numeral(crypto.percent_change_24h).format('0.0')}%</div>
 							</div>
 						</div>
 					</div>		
