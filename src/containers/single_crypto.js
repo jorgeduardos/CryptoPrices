@@ -9,6 +9,7 @@ import Conversor from '../components/conversor.js';
 
 const imgPath = '../../style/imgs/cryptocurrency-icons/svg/color';
 
+
 class SingleCrypto extends Component {
 
 	
@@ -25,14 +26,14 @@ class SingleCrypto extends Component {
 	
 	render(){
 		const crypto = this.props.singleCrypto;
-		const cryptoSymbol = this.props.SingleCrypto.symbol.toLowerCase();
+		// const cryptoSymbol = this.props.SingleCrypto.symbol.toLowerCase();
 		return(
 			<div className="container top-container">
 				<SearchBar title={crypto.name} history={this.props.history} />
 				<div className='singleCryptoContainer'>
 					<div className='col-sm-4'>
 						<img 
-							src={`${imgPath}/${cryptoSymbol}.svg`} 
+							src={`${imgPath}/${crypto.symbol ? crypto.symbol.toLowerCase() : crypto.symbol}.svg`} 
 							alt={`${crypto.name} logo image`}
 						/>
 						<div className='rank-div'>
