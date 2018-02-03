@@ -25,13 +25,14 @@ class SingleCrypto extends Component {
 	
 	render(){
 		const crypto = this.props.singleCrypto;
+		const cryptoSymbol = this.props.SingleCrypto.symbol.toLowerCase();
 		return(
 			<div className="container top-container">
 				<SearchBar title={crypto.name} history={this.props.history} />
 				<div className='singleCryptoContainer'>
 					<div className='col-sm-4'>
 						<img 
-							src={`${imgPath}/${crypto.symbol.toLowerCase()}.svg`} 
+							src={`${imgPath}/${cryptoSymbol}.svg`} 
 							alt={`${crypto.name} logo image`}
 						/>
 						<div className='rank-div'>
