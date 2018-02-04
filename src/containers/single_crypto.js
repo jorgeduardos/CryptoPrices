@@ -16,7 +16,7 @@ class SingleCrypto extends Component {
 	componentWillMount(){
 		const {id} = this.props.match.params;
 		this.props.fetchSingleCrypto(id);
-		this.props.fetchCryptos(100);
+		this.props.fetchCryptos(500);
 	}
 
 	onClickHanlder(){

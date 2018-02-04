@@ -6,11 +6,11 @@
   "homepage": "https://jorgeduardos.github.io/CryptoPrices",
   "repository": "",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "postinstall_coment": "webpack -p",
-    "start_coment": "node server.js"
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Jorge E Sosa",
   "license": "ISC",
