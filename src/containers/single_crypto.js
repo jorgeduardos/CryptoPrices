@@ -5,7 +5,7 @@ import { fetchSingleCrypto, fetchCryptos } from  '../actions';
 import SearchBar from '../components/search_bar.js';
 import numeral from 'numeral';
 
-import Conversor from '../components/conversor.js';
+import Conversor from '../components/conversor2.js';
 
 const imgPath = '../../style/imgs/cryptocurrency-icons/svg/color';
 

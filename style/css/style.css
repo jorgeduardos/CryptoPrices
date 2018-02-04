@@ -116,6 +116,15 @@
       .top-container .conversor-container .input-container span {
         margin: 0 20px 0 20px; }
 
+.selectComp-div {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 250px; }
+  .selectComp-div span {
+    margin: 0 !important; }
+
 /* Dropdown Button */
 .dropbtn {
   background-color: white;

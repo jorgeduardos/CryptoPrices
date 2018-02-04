@@ -26,11 +26,8 @@
     .top-container .conversor-container .input-container .amount{
         width: 150px;
     }
-    .conversor-container .dropbtn{
+    .conversor-container .selectComp-div{
         width: 150px;
-    }
-    .conversor-container .dropdown-content{
-        min-width: 150px;
     }
 }
 
@@ -61,11 +58,11 @@
         width:120px;
     }
 
-    .conversor-container .dropbtn{
+    .conversor-container .selectComp-div{
         width: 110px;
     }
 
-    .dropbtn{
+    .selectComp-div{
         font-size: 1em;
     }
 }
@@ -94,11 +91,11 @@
         width:100px;
     }
 
-    .conversor-container .dropbtn{
+    .conversor-container .selectComp-div{
         width: 90px;
     }
 
-    .dropbtn{
+    .selectComp-div{
         font-size: 0.9em;
     }
 }
