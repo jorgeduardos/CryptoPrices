@@ -56,6 +56,8 @@
     "redux-promise": "^0.5.3",
     "sort-by": "^1.2.0",
     "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-server": "^1.14.0",
+    "style-loader": "^0.20.1",
+    "css-loader": "^0.28.9"
   }
 }
