@@ -7,12 +7,10 @@ import SingleCrypto from '../containers/single_crypto.js';
 
 const Main = () => {
 	return(
-		<div>
-			<Switch>
-				<Route exact path='/' component={Home}/>
-				<Route path='/single-crypto/:id' component={SingleCrypto} />
-			</Switch>
-		</div>
+		<Switch>
+			<Route exact path='/' component={Home}/>
+			<Route path='/single-crypto/:id' component={SingleCrypto} />
+		</Switch>
 	);
 }
 

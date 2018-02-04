@@ -13,7 +13,7 @@ const imgPath = '../../style/imgs/cryptocurrency-icons/svg/color';
 class SingleCrypto extends Component {
 
 	
-	componentDidMount(){
+	componentWillMount(){
 		const {id} = this.props.match.params;
 		this.props.fetchSingleCrypto(id);
 		this.props.fetchCryptos(100);
@@ -29,6 +29,7 @@ class SingleCrypto extends Component {
 		// const cryptoSymbol = this.props.SingleCrypto.symbol.toLowerCase();
 		return(
 			<div className="container top-container">
+				{console.log(this.props.cryptos)}
 				<SearchBar title={crypto.name} history={this.props.history} />
 				<div className='singleCryptoContainer'>
 					<div className='col-xs-4'>

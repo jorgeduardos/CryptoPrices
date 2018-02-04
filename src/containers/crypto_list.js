@@ -10,7 +10,7 @@ class CryptoList extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			limit: 12
+			limit: 24
 		}
 	}
 
@@ -26,7 +26,7 @@ class CryptoList extends Component{
 		});
 	}
 
-	componentDidMount(){
+	componentWillMount(){
 		this.props.fetchCryptos(500);
 		this.props.deleteSingleCrypto();
 	}

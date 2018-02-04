@@ -8,7 +8,6 @@ const CryptoItem = (props) => {
 
 	return(
 		<div className='cryptoItem'>
-			{console.log(props.crypto.symbol)}
 			<Link to={`/single-crypto/${props.crypto.id}`}><img className='cryptoImg' src={imgPath} /></Link>
 			<div>
 				<span>{props.crypto.rank}.</span><h6>{props.crypto.name}</h6>
