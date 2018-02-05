@@ -15,7 +15,13 @@ class Conversor extends Component {
 			result: 0
 		}
 	}
-	
+
+	componentWillReceiveProps (nextProps) {
+	    this.setState({
+	      selectedCrypto: nextProps.crypto,
+	    });
+	}
+		
 	updateValue (newValue) {
 		let result = this.conversorFunc(this.state.amount, newValue, this.state.cryptoToConvert);
 		this.setState({
